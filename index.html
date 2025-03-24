@@ -45,55 +45,65 @@
 </section>
     <!-- Sección de servicios -->
     <section class="section" id="servicios">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestros Servicios</h2>
-                <p>Ofrecemos una amplia gama de servicios personalizados para satisfacer tus necesidades</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos una amplia gama de servicios personalizados para satisfacer tus necesidades</p>
+        </div>
+        <div class="services">
+            <div class="service-card">
+                 <div class="service-img" style="display: flex; justify-content: center; align-items: center; height: 200px; overflow: hidden;">
+                    <img src="images/maquina3.jpg" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Sublimados">
+                </div>
+                <div class="service-content">
+                    <h3>Bordados</h3>
+                    <p>Bordados personalizados de alta calidad para uniformes, gorras, camisetas y más.</p>
+                    <a href="#galeria" class="btn" onclick="filterGallery('bordados')">Ver trabajos</a>
+                </div>
             </div>
-            <div class="services">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/api/placeholder/400/300" alt="Bordados">
-                    </div>
-                    <div class="service-content">
-                        <h3>Bordados</h3>
-                        <p>Bordados personalizados de alta calidad para uniformes, gorras, camisetas y más.</p>
-                        <a href="#galeria" class="btn" onclick="filterGallery('bordados')">Ver trabajos</a>
-                    </div>
+            <div class="service-card">
+                 <div class="service-img" style="display: flex; justify-content: center; align-items: center; height: 200px; overflow: hidden;">
+                    <img src="images/maquinab.jpg" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Sublimados">
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/api/placeholder/400/300" alt="Confecciones">
-                    </div>
-                    <div class="service-content">
-                        <h3>Uniformes escolares</h3>
-                        <p>Confección de prendas a medida, uniformes empresariales y escolares, ropa deportiva.</p>
-                        <a href="#galeria" class="btn" onclick="filterGallery('confecciones')">Ver trabajos</a>
-                    </div>
+				 <div class="service-content">
+                    <h3>Bordados Béisbol</h3>
+                    <p>Bordados personalizados de alta calidad para uniformes, gorras y camisetas de béisbol. ¡Dale un toque único a tu equipo!</p>
+                    <a href="#galeria" class="btn" onclick="filterGallery('bordados')">Ver trabajos</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/api/placeholder/400/300" alt="Sublimados">
-                    </div>
-                    <div class="service-content">
-                        <h3>Sublimados</h3>
-                        <p>Sublimación textil de alta resolución, ideal para camisetas, tazas, gorras y artículos promocionales.</p>
-                        <a href="#galeria" class="btn" onclick="filterGallery('sublimados')">Ver trabajos</a>
-                    </div>
+            </div>
+            <div class="service-card">
+                 <div class="service-img" style="display: flex; justify-content: center; align-items: center; height: 200px; overflow: hidden;">
+                    <img src="images/chamarracbtis.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Sublimados">
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/api/placeholder/400/300" alt="Ponchados">
-                    </div>
-                    <div class="service-content">
-                        <h3>Ponchados</h3>
-                        <p>Servicio de ponchado de logotipos e imágenes para bordados profesionales.</p>
-                        <a href="#galeria" class="btn" onclick="filterGallery('ponchados')">Ver trabajos</a>
-                    </div>
+                <div class="service-content">
+                    <h3>Uniformes escolares</h3>
+                    <p>Confección de prendas a medida, uniformes y escolares y empresariales.</p>
+                    <a href="#galeria" class="btn" onclick="filterGallery('confecciones')">Ver trabajos</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="display: flex; justify-content: center; align-items: center; height: 200px; overflow: hidden;">
+                    <img src="images/goldenpanthersp.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Sublimados">
+                </div>
+                <div class="service-content">
+                    <h3>Sublimados</h3>
+                    <p>Sublimación textil de alta resolución, ideal para uniformes deportivos y playeras..</p>
+                    <a href="#galeria" class="btn" onclick="filterGallery('sublimados')">Ver trabajos</a>
+                </div>
+            </div>
+            <div class="service-card">
+                 <div class="service-img" style="display: flex; justify-content: center; align-items: center; height: 200px; overflow: hidden;">
+                    <img src="images/goldenpanthersp.png" style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Sublimados">
+                </div>
+                <div class="service-content">
+                    <h3>Ponchados</h3>
+                    <p>Servicio de ponchado de logotipos e imágenes para bordados profesionales.</p>
+                    <a href="#galeria" class="btn" onclick="filterGallery('ponchados')">Ver trabajos</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección de galería -->
     <section class="section" id="galeria">
@@ -106,6 +116,7 @@
                 <div class="gallery-tabs">
                     <button class="gallery-tab active" onclick="filterGallery('todos')">Todos</button>
                     <button class="gallery-tab" onclick="filterGallery('bordados')">Bordados</button>
+					<button class="gallery-tab" onclick="filterGallery('bordadosbeisbol')">Bordados Béisbol</button>
                     <button class="gallery-tab" onclick="filterGallery('confecciones')">Uniformes Escolares</button>
                     <button class="gallery-tab" onclick="filterGallery('sublimados')">Sublimados</button>
                     <button class="gallery-tab" onclick="filterGallery('ponchados')">Ponchados</button>
@@ -124,24 +135,63 @@
                         <img src="/api/placeholder/400/400" alt="Bordado 3">
                         <div class="gallery-caption">Bordado Personalizado</div>
                     </div>
-                    
-                    <!-- Confecciones -->
+                    <!-- Bordados beisbol-->
+                    <div class="gallery-item" data-category="bordadosbeisbol">
+                        <img src="images/diablos.png" alt="Bordado 1">
+                        <div class="gallery-caption">Diablos</div>
+                    </div>
+                    <div class="gallery-item" data-category="bordadosbeisbol">
+                        <img src="images/diablosback.png" alt="Bordado 2">
+                        <div class="gallery-caption">Diablos</div>
+                    </div>
+                   <div class="gallery-item" data-category="bordadosbeisbol">
+                        <img src="images/sancrsitobal.png" alt="Bordado 1">
+                        <div class="gallery-caption">San Cristobal</div>
+                    </div>
+                    <div class="gallery-item" data-category="bordadosbeisbol">
+                        <img src="images/sancristobalback.png" alt="Bordado 2">
+                        <div class="gallery-caption">San Cristobal</div>
+                    </div>
+					<div class="gallery-item" data-category="bordadosbeisbol">
+                        <img src="images/la.png" alt="Bordado 2">
+                        <div class="gallery-caption">LA</div>
+                    </div>
+                    <!-- Uniformes escolares -->
                     <div class="gallery-item" data-category="Confecciones">
-                        <img src="/api/placeholder/400/400" alt="Confección 1">
-                        <div class="gallery-caption">Uniformes Empresariales</div>
+                        <img src="images/chamarracbtis.png" alt="Confección 1">
+                        <div class="gallery-caption">Chamarra Cbtis $230.00</div>
                     </div>
                     <div class="gallery-item" data-category="confecciones">
-                        <img src="/api/placeholder/400/400" alt="Confección 2">
-                        <div class="gallery-caption">Uniformes Escolares</div>
+                        <img src="images/panscbtis.png" alt="Confección 2">
+                        <div class="gallery-caption">Pans Cbtis $200.00</div>
                     </div>
                     <div class="gallery-item" data-category="confecciones">
-                        <img src="/api/placeholder/400/400" alt="Confección 3">
-                        <div class="gallery-caption">Ropa Deportiva</div>
+                        <img src="images/suetercbtis.png" alt="Confección 3">
+                        <div class="gallery-caption">Suéter Cbtis $290.00</div>
                     </div>
-                    
+					<div class="gallery-item" data-category="confecciones">
+                        <img src="images/playeracbtis.png" alt="Confección 3">
+                        <div class="gallery-caption">Playera Cbtis $200.00</div>
+                    </div>
+                    <div class="gallery-item" data-category="Confecciones">
+                        <img src="images/pantaloncbtis.png" alt="Confección 1">
+                        <div class="gallery-caption">Pantalón Cbtis $210.00</div>
+                    </div>
+                    <div class="gallery-item" data-category="confecciones">
+                        <img src="images/faldacbtis.png" alt="Confección 2">
+                        <div class="gallery-caption">Falda Cbtis $210.00</div>
+                    </div>
+                    <div class="gallery-item" data-category="confecciones">
+                        <img src="images/playeradgeti.png" alt="Confección 3">
+                        <div class="gallery-caption">Playera Cbtis $170.00</div>
+                    </div>
+					<div class="gallery-item" data-category="confecciones">
+                        <img src="images/uniforme.png" alt="Confección 3">
+                        <div class="gallery-caption">Playera Cbtis 184</div>
+                    </div>
                     <!-- Sublimados -->
                     <div class="gallery-item" data-category="sublimados">
-                        <img src="goldenpanthersp.png" alt="Sublimado 1">
+                        <img src="images/goldenpanthersp.png" alt="Sublimado 1">
                         <div class="gallery-caption">Golden panthers</div>
                     </div>
                     <div class="gallery-item" data-category="sublimados">
@@ -181,6 +231,10 @@
                         <div class="gallery-caption">Juniors</div>
                     </div>
 					<div class="gallery-item" data-category="sublimados">
+                        <img src="images/japon.png" alt="Sublimado 3">
+                        <div class="gallery-caption">Japón</div>
+                    </div>
+					<div class="gallery-item" data-category="sublimados">
                         <img src="images/angelestulcingo.png" alt="Sublimado 3">
                         <div class="gallery-caption">Angeles Tulcingo</div>
                     </div>
@@ -204,6 +258,14 @@
                         <img src="images/rinconb.png" alt="Sublimado 3">
                         <div class="gallery-caption">Rincon de Analco</div>
                     </div>
+					<div class="gallery-item" data-category="sublimados">
+                        <img src="images/sudaderavirgen.png" alt="Sublimado 3">
+                        <div class="gallery-caption">Sudadera Virgen de Guadalupe</div>
+                    </div>
+					<div class="gallery-item" data-category="sublimados">
+                        <img src="images/virgen.png" alt="Sublimado 3">
+                        <div class="gallery-caption">Playera Virgen de Guadalupe</div>
+                    </div>
                     <!-- Ponchados -->
                     <div class="gallery-item" data-category="ponchados">
                         <img src="/api/placeholder/400/400" alt="Ponchado 1">
@@ -211,11 +273,11 @@
                     </div>
                     <div class="gallery-item" data-category="ponchados">
                         <img src="/api/placeholder/400/400" alt="Ponchado 2">
-                        <div class="gallery-caption">Diseño para Bordado</div>
+                        <div class="gallery-caption">Sudadera Virgen de Guadalupe</div>
                     </div>
                     <div class="gallery-item" data-category="ponchados">
                         <img src="/api/placeholder/400/400" alt="Ponchado 3">
-                        <div class="gallery-caption">Ponchado Personalizado</div>
+                        <div class="gallery-caption">Playera Virgen de Guadalupe</div>
                     </div>
                 </div>
             </div>
@@ -238,7 +300,7 @@
                             <div>
                                 <h4>Dirección</h4>
                                 <p>Bvld Revolución 5 B, Sta. Cruz Tecoxco, 74440, Izúcar de Matamoros, Pue.</p>
-								<p>Av. Ayuntamiento #6 col. Centro Frente al centro de convenciones de Don Lole, Chiautla,Pue.</p>
+								<p>Av. Ayuntamiento #6 col. Centro, Chiautla de Tapia, Pue.</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -262,14 +324,14 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <h3>Envíanos un Mensaje</h3>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Nombre completo" required>
-                       <input type="tel" placeholder="Teléfono">
-                        <textarea placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                    </form>
-                </div>
+    <h3>Envíanos un Mensaje</h3>
+    <form class="contact-form" id="whatsappForm" onsubmit="return enviarWhatsApp()">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="tel" id="telefono" placeholder="Teléfono">
+        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+    </form>
+</div>
             </div>
         </div>
     </section>
@@ -298,7 +360,7 @@
                     <h3>Servicios</h3>
                     <ul class="footer-links">
                         <li><a href="#galeria" onclick="filterGallery('bordados')">Bordados</a></li>
-                        <li><a href="#galeria" onclick="filterGallery('confecciones')">Confecciones</a></li>
+                        <li><a href="#galeria" onclick="filterGallery('confecciones')">Uniformes Escolares</a></li>
                         <li><a href="#galeria" onclick="filterGallery('sublimados')">Sublimados</a></li>
                         <li><a href="#galeria" onclick="filterGallery('ponchados')">Ponchados</a></li>
                     </ul>
