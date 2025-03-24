@@ -60,3 +60,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function enviarWhatsApp() {
+    // Obtener los valores del formulario
+    var nombre = document.getElementById('nombre').value;
+    var telefono = document.getElementById('telefono').value;
+    var mensaje = document.getElementById('mensaje').value;
+    
+    // Formatear el mensaje
+    var mensajeCompleto = "Nombre: " + nombre + "\nTeléfono: " + telefono + "\nMensaje: " + mensaje;
+    
+    // Codificar el mensaje para URL
+    var mensajeCodificado = encodeURIComponent(mensajeCompleto);
+    
+    // Tu número de WhatsApp (incluye el código de país sin el +)
+    var tuNumeroWhatsApp = "522431037325"; // Ejemplo: 521234567890 para México
+    
+    // Crear el enlace de WhatsApp
+    var urlWhatsApp = "https://wa.me/" + tuNumeroWhatsApp + "?text=" + mensajeCodificado;
+    
+    // Abrir WhatsApp en una nueva pestaña
+    window.open(urlWhatsApp, '_blank');
+    
+    return false; // Evitar que el formulario se envíe
+}
